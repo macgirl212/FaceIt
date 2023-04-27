@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3C5B9629FB15FA009EA815 /* FaceIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */; };
+		3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9729FB1653009EA815 /* DataController.swift */; };
+		3B3C5B9B29FB1A47009EA815 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */; };
+		3B3C5B9C29FB1A47009EA815 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */; };
+		3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */; };
 		3BA2DFDB29FAC2EF00E7B8A2 /* FaceItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */; };
 		3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */; };
 		3BA2DFDF29FAC2EF00E7B8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2DFDE29FAC2EF00E7B8A2 /* Assets.xcassets */; };
 		3BA2DFE229FAC2EF00E7B8A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2DFE129FAC2EF00E7B8A2 /* Preview Assets.xcassets */; };
+		3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3C5B9529FB15FA009EA815 /* FaceIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceIt.xcdatamodel; sourceTree = "<group>"; };
+		3B3C5B9729FB1653009EA815 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		3BA2DFD729FAC2EF00E7B8A2 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceItApp.swift; sourceTree = "<group>"; };
 		3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BA2DFDE29FAC2EF00E7B8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BA2DFE129FAC2EF00E7B8A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,14 @@
 		3BA2DFD929FAC2EF00E7B8A2 /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
+				3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */,
+				3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */,
 				3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */,
 				3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */,
+				3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */,
+				3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */,
+				3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */,
+				3B3C5B9729FB1653009EA815 /* DataController.swift */,
 				3BA2DFDE29FAC2EF00E7B8A2 /* Assets.xcassets */,
 				3BA2DFE029FAC2EF00E7B8A2 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3C5B9B29FB1A47009EA815 /* Person+CoreDataClass.swift in Sources */,
+				3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */,
+				3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */,
+				3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */,
+				3B3C5B9C29FB1A47009EA815 /* Person+CoreDataProperties.swift in Sources */,
 				3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */,
 				3BA2DFDB29FAC2EF00E7B8A2 /* FaceItApp.swift in Sources */,
+				3B3C5B9629FB15FA009EA815 /* FaceIt.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +294,7 @@
 				DEVELOPMENT_TEAM = Q25A74NXRZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library to add a picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +324,7 @@
 				DEVELOPMENT_TEAM = Q25A74NXRZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library to add a picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B3C5B9529FB15FA009EA815 /* FaceIt.xcdatamodel */,
+			);
+			currentVersion = 3B3C5B9529FB15FA009EA815 /* FaceIt.xcdatamodel */;
+			path = FaceIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3BA2DFCF29FAC2EF00E7B8A2 /* Project object */;
 }
