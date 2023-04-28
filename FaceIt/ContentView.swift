@@ -19,9 +19,27 @@ struct ContentView: View {
             List {
                 ForEach(people, id: \.id) { person in
                     HStack {
-                        // picture to come
+                        // might need to change the image sizes
+                        if person.imageFile != nil {
+                            let imageUrl = getDocumentsDirectory().appendingPathComponent(person.imageFile ?? "")
+
+                            let imageData = try? Data(contentsOf: imageUrl)
+                            Image(uiImage: UIImage(data: imageData ?? Data()) ?? UIImage())
+                                .resizable()
+                                .clipShape(Circle())
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                        } else {
+                            Image("Unknown")
+                                .resizable()
+                                .clipShape(Circle())
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                                
+                        }
                         
                         Text(person.name ?? "Unknown")
+                            .font(.title)
                     }
                 }
             }
