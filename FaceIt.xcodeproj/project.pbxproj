@@ -12,6 +12,7 @@
 		3B3C5B9B29FB1A47009EA815 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */; };
 		3B3C5B9C29FB1A47009EA815 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */; };
 		3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */; };
+		3B8B2FDF29FDB24B00489F2B /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */; };
 		3BA2DFDB29FAC2EF00E7B8A2 /* FaceItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */; };
 		3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */; };
 		3BA2DFDF29FAC2EF00E7B8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2DFDE29FAC2EF00E7B8A2 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		3BA2DFD729FAC2EF00E7B8A2 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceItApp.swift; sourceTree = "<group>"; };
 		3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */,
 				3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */,
 				3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */,
+				3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */,
 				3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */,
 				3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */,
 				3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */,
@@ -159,6 +162,7 @@
 				3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */,
 				3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */,
 				3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */,
+				3B8B2FDF29FDB24B00489F2B /* PersonDetailView.swift in Sources */,
 				3B3C5B9C29FB1A47009EA815 /* Person+CoreDataProperties.swift in Sources */,
 				3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */,
 				3BA2DFDB29FAC2EF00E7B8A2 /* FaceItApp.swift in Sources */,
