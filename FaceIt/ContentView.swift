@@ -10,38 +10,22 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var people: FetchedResults<Person>
-
-    @State private var showingAddPersonView: Bool = false
-    @State private var pickedImage: UIImage?
+    
+    @StateObject private var viewModel = ViewModel()
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(people, id: \.id) { person in
+                ForEach(people) { person in
                     NavigationLink {
                         PersonDetailView(person: person)
                     } label: {
                         HStack {
-                            // might need to change the image sizes
-                            if person.imageFile != nil {
-                                let imageUrl = getDocumentsDirectory().appendingPathComponent(person.imageFile ?? "")
-                                
-                                let imageData = try? Data(contentsOf: imageUrl)
-                                Image(uiImage: UIImage(data: imageData ?? Data()) ?? UIImage())
-                                    .resizable()
-                                    .clipShape(Circle())
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                            } else {
-                                Image("Unknown")
-                                    .resizable()
-                                    .clipShape(Circle())
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                                
-                            }
+                            ImageView(person: person)
+                                .clipShape(Circle())
+                                .frame(width: 100, height: 100)
                             
-                            Text(person.name ?? "Unknown")
+                            Text(person.wrappedName)
                                 .font(.title)
                         }
                     }
@@ -50,12 +34,12 @@ struct ContentView: View {
             .navigationTitle("Face It")
             .toolbar {
                 Button {
-                    showingAddPersonView = true
+                    viewModel.showingAddPersonView = true
                 } label: {
                     Image(systemName: "plus")
                 }
             }
-            .sheet(isPresented: $showingAddPersonView) {
+            .sheet(isPresented: $viewModel.showingAddPersonView) {
                 AddPersonView()
             }
         }

@@ -12,20 +12,9 @@ struct PersonDetailView: View {
     
     var body: some View {
         VStack {
-            if person.imageFile != nil {
-                let imageUrl = getDocumentsDirectory().appendingPathComponent(person.imageFile ?? "")
-                
-                let imageData = try? Data(contentsOf: imageUrl)
-                Image(uiImage: UIImage(data: imageData ?? Data()) ?? UIImage())
-                    .resizable()
-                    .scaledToFit()
-            } else {
-                Image("Unknown")
-                    .resizable()
-                    .scaledToFit()
-            }
+            ImageView(person: person)
             
-            Text(person.name ?? "Unknown")
+            Text(person.wrappedName)
                 .font(.largeTitle)
                 .padding()
             

@@ -19,6 +19,14 @@ extension Person {
     @NSManaged public var id: UUID?
     @NSManaged public var imageFile: String?
     @NSManaged public var name: String?
+    
+    var wrappedName: String {
+        name ?? "Unknown"
+    }
+    
+    var wrappedImageFile: String {
+        imageFile ?? ""
+    }
 
 }
 
