@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B089FC129FEE9B0000CFBE8 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */; };
+		3B089FC329FEED6F000CFBE8 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */; };
 		3B3C5B9629FB15FA009EA815 /* FaceIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */; };
 		3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9729FB1653009EA815 /* DataController.swift */; };
 		3B3C5B9B29FB1A47009EA815 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		3B3C5B9529FB15FA009EA815 /* FaceIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceIt.xcdatamodel; sourceTree = "<group>"; };
 		3B3C5B9729FB1653009EA815 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -78,6 +82,8 @@
 				3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */,
 				3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */,
 				3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */,
+				3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */,
+				3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */,
 				3B8B2FE429FDC0A400489F2B /* ImageView.swift */,
 				3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */,
 				3B8B2FE829FDC29700489F2B /* AddPersonView-ViewModel.swift */,
@@ -174,10 +180,12 @@
 				3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */,
 				3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */,
 				3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */,
+				3B089FC329FEED6F000CFBE8 /* Color-Theme.swift in Sources */,
 				3B8B2FDF29FDB24B00489F2B /* PersonDetailView.swift in Sources */,
 				3B3C5B9C29FB1A47009EA815 /* Person+CoreDataProperties.swift in Sources */,
 				3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */,
 				3B8B2FE929FDC29700489F2B /* AddPersonView-ViewModel.swift in Sources */,
+				3B089FC129FEE9B0000CFBE8 /* ListItemView.swift in Sources */,
 				3B8B2FE329FDBCB700489F2B /* ContentView-ViewModel.swift in Sources */,
 				3B8B2FE529FDC0A400489F2B /* ImageView.swift in Sources */,
 				3B8B2FE729FDC13D00489F2B /* ImageView-ViewModel.swift in Sources */,

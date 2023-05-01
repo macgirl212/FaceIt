@@ -20,5 +20,6 @@ struct PersonDetailView: View {
             
             Spacer()
         }
+        .background(CustomColor.background)
     }
 }

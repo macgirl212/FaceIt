@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var people: FetchedResults<Person>
     
@@ -20,23 +21,29 @@ struct ContentView: View {
                     NavigationLink {
                         PersonDetailView(person: person)
                     } label: {
-                        HStack {
-                            ImageView(person: person)
-                                .clipShape(Circle())
-                                .frame(width: 100, height: 100)
-                            
-                            Text(person.wrappedName)
-                                .font(.title)
-                        }
+                        ListItemView(person: person)
                     }
+                    .listRowBackground(
+                        colorScheme == .light
+                            ? CustomColor.lightListBackground
+                            : CustomColor.darkListBackground
+                    )
                 }
             }
+            .scrollContentBackground(.hidden)
+            .background(CustomColor.background)
             .navigationTitle("Face It")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 Button {
                     viewModel.showingAddPersonView = true
                 } label: {
                     Image(systemName: "plus")
+                        .foregroundColor(
+                            colorScheme == .light
+                                ? CustomColor.darkListBackground
+                                : CustomColor.lightListBackground
+                        )
                 }
             }
             .sheet(isPresented: $viewModel.showingAddPersonView) {
