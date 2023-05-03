@@ -48,6 +48,8 @@ struct AddPersonView: View {
                         let newPerson = Person(context: moc)
                         viewModel.addPerson(newPerson)
                         
+                        try? moc.save()
+                        
                         dismiss()
                     }
                     .disabled(!viewModel.isValidEntry)
