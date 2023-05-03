@@ -54,18 +54,9 @@ struct ContentView: View {
     }
 
     func deletePerson(at offsets: IndexSet) {
-        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        
         for offset in offsets {
             let person = people[offset]
-            do {
-                let fileURLs = try FileManager.default.contentsOfDirectory(at: path, includingPropertiesForKeys: nil)
-                for fileURL in fileURLs where fileURL.absoluteString.contains(person.wrappedImageFile) {
-                    try FileManager.default.removeItem(at: fileURL)
-                }
-            } catch {
-                print(error.localizedDescription)
-            }
+            viewModel.deleteFile(person)
             moc.delete(person)
         }
         try? moc.save()
