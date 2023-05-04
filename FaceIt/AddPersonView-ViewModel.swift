@@ -14,6 +14,8 @@ extension AddPersonView {
         @Published var isShowingPicker: Bool = false
         @Published var pickedImage: UIImage?
         
+        let locationFetcher = LocationFetcher()
+        
         var isValidEntry: Bool {
             // name textfield might need some extra validation
             !name.isEmpty && pickedImage != nil
@@ -22,6 +24,14 @@ extension AddPersonView {
         func addPerson(_ person: Person) {
             person.id = UUID()
             person.name = name
+            
+            if let location = self.locationFetcher.lastKnownLocation {
+                person.latitude = location.latitude
+                person.longitude = location.longitude
+            } else {
+                print("Your location is unknown")
+            }
+            
             
             let imageName = UUID().uuidString
             let imageFileName = getDocumentsDirectory().appendingPathComponent(imageName)

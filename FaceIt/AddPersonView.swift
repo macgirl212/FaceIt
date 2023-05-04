@@ -56,6 +56,9 @@ struct AddPersonView: View {
                 }
                 
             }
+            .onAppear {
+                viewModel.locationFetcher.start()
+            }
         }
         .sheet(isPresented: $viewModel.isShowingPicker) {
             ImagePicker(image: $viewModel.pickedImage)

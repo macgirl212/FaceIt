@@ -11,8 +11,6 @@
 		3B089FC329FEED6F000CFBE8 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */; };
 		3B3C5B9629FB15FA009EA815 /* FaceIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */; };
 		3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9729FB1653009EA815 /* DataController.swift */; };
-		3B3C5B9B29FB1A47009EA815 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */; };
-		3B3C5B9C29FB1A47009EA815 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */; };
 		3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */; };
 		3B8B2FDF29FDB24B00489F2B /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */; };
 		3B8B2FE329FDBCB700489F2B /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B2FE229FDBCB700489F2B /* ContentView-ViewModel.swift */; };
@@ -24,6 +22,9 @@
 		3BA2DFDF29FAC2EF00E7B8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2DFDE29FAC2EF00E7B8A2 /* Assets.xcassets */; };
 		3BA2DFE229FAC2EF00E7B8A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2DFE129FAC2EF00E7B8A2 /* Preview Assets.xcassets */; };
 		3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */; };
+		3BA7C09B2A03263A001B7662 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */; };
+		3BA7C0A02A032C47001B7662 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */; };
+		3BA7C0A12A032C47001B7662 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,6 @@
 		3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		3B3C5B9529FB15FA009EA815 /* FaceIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceIt.xcdatamodel; sourceTree = "<group>"; };
 		3B3C5B9729FB1653009EA815 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		3B8B2FE229FDBCB700489F2B /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
@@ -45,6 +44,9 @@
 		3BA2DFDE29FAC2EF00E7B8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BA2DFE129FAC2EF00E7B8A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,11 @@
 		3BA2DFD929FAC2EF00E7B8A2 /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
-				3B3C5B9929FB1A47009EA815 /* Person+CoreDataClass.swift */,
-				3B3C5B9A29FB1A47009EA815 /* Person+CoreDataProperties.swift */,
+				3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */,
+				3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */,
 				3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */,
 				3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */,
+				3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */,
 				3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */,
 				3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */,
 				3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */,
@@ -176,16 +179,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B3C5B9B29FB1A47009EA815 /* Person+CoreDataClass.swift in Sources */,
+				3BA7C0A02A032C47001B7662 /* Person+CoreDataClass.swift in Sources */,
 				3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */,
 				3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */,
 				3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */,
 				3B089FC329FEED6F000CFBE8 /* Color-Theme.swift in Sources */,
+				3BA7C0A12A032C47001B7662 /* Person+CoreDataProperties.swift in Sources */,
 				3B8B2FDF29FDB24B00489F2B /* PersonDetailView.swift in Sources */,
-				3B3C5B9C29FB1A47009EA815 /* Person+CoreDataProperties.swift in Sources */,
 				3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */,
 				3B8B2FE929FDC29700489F2B /* AddPersonView-ViewModel.swift in Sources */,
 				3B089FC129FEE9B0000CFBE8 /* ListItemView.swift in Sources */,
+				3BA7C09B2A03263A001B7662 /* LocationFetcher.swift in Sources */,
 				3B8B2FE329FDBCB700489F2B /* ContentView-ViewModel.swift in Sources */,
 				3B8B2FE529FDC0A400489F2B /* ImageView.swift in Sources */,
 				3B8B2FE729FDC13D00489F2B /* ImageView-ViewModel.swift in Sources */,
@@ -322,6 +326,7 @@
 				DEVELOPMENT_TEAM = Q25A74NXRZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to tag where the picture was taken.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library to add a picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,6 +357,7 @@
 				DEVELOPMENT_TEAM = Q25A74NXRZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to tag where the picture was taken.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library to add a picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
