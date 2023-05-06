@@ -22,7 +22,7 @@ struct AddPersonView: View {
                 
                 Section {
                     Button {
-                        viewModel.isShowingPicker = true
+                        viewModel.isShowingSourceMenu = true
                     } label: {
                         Text("Add image")
                     }
@@ -62,6 +62,11 @@ struct AddPersonView: View {
         }
         .sheet(isPresented: $viewModel.isShowingPicker) {
             ImagePicker(image: $viewModel.pickedImage)
+        }
+        .confirmationDialog("How do you want to import a photo?", isPresented: $viewModel.isShowingSourceMenu) {
+            Button("Take New Photo") { }
+            Button("Import from Library") { viewModel.isShowingPicker = true }
+            Button("Cancel", role: .cancel) { }
         }
     }
 }

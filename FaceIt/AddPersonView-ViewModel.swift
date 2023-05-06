@@ -12,6 +12,7 @@ extension AddPersonView {
     @MainActor class ViewModel: ObservableObject {
         @Published var name: String = ""
         @Published var isShowingPicker: Bool = false
+        @Published var isShowingSourceMenu: Bool = false
         @Published var pickedImage: UIImage?
         
         let locationFetcher = LocationFetcher()

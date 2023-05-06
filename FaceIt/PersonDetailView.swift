@@ -21,8 +21,6 @@ struct PersonDetailView: View {
         [person]
     }
     
-    @StateObject var viewModel = ViewModel()
-    
     var body: some View {
         VStack {
             ImageView(person: person)
