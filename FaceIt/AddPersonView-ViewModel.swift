@@ -18,8 +18,8 @@ extension AddPersonView {
         let locationFetcher = LocationFetcher()
         
         var isValidEntry: Bool {
-            // name textfield might need some extra validation
-            !name.isEmpty && pickedImage != nil
+            // checks if name has any word characters and if an image exists
+            name.contains(/\w/) && pickedImage != nil
         }
         
         func addPerson(_ person: Person) {
