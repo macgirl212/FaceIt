@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension AddPersonView {
-    @MainActor class ViewModel: ObservableObject {
+    @MainActor final class ViewModel: ObservableObject {
         @Published var name: String = ""
         @Published var isShowingPicker: Bool = false
         @Published var isShowingSourceMenu: Bool = false
@@ -35,7 +35,10 @@ extension AddPersonView {
             
             
             let imageName = UUID().uuidString
-            let imageFileName = getDocumentsDirectory().appendingPathComponent(imageName)
+            
+            let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            
+            let imageFileName = path.appendingPathComponent(imageName)
             
             guard let uiImage = pickedImage else { return }
             
@@ -49,12 +52,6 @@ extension AddPersonView {
             }
             
             person.imageFile = imageName
-        }
-        
-        func getDocumentsDirectory() -> URL {
-            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-            let documentsDirectory = paths[0]
-            return documentsDirectory
         }
     }
 }

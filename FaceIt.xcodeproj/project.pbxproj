@@ -25,6 +25,7 @@
 		3BA7C09B2A03263A001B7662 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */; };
 		3BA7C0A02A032C47001B7662 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */; };
 		3BA7C0A12A032C47001B7662 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */; };
+		3BBFA4222A071D1F00A0623D /* PersonDetailView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonDetailView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */,
 				3B8B2FE429FDC0A400489F2B /* ImageView.swift */,
 				3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */,
+				3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */,
 				3B8B2FE829FDC29700489F2B /* AddPersonView-ViewModel.swift */,
 				3B8B2FE229FDBCB700489F2B /* ContentView-ViewModel.swift */,
 				3B8B2FE629FDC13D00489F2B /* ImageView-ViewModel.swift */,
@@ -192,6 +195,7 @@
 				3BA7C09B2A03263A001B7662 /* LocationFetcher.swift in Sources */,
 				3B8B2FE329FDBCB700489F2B /* ContentView-ViewModel.swift in Sources */,
 				3B8B2FE529FDC0A400489F2B /* ImageView.swift in Sources */,
+				3BBFA4222A071D1F00A0623D /* PersonDetailView-ViewModel.swift in Sources */,
 				3B8B2FE729FDC13D00489F2B /* ImageView-ViewModel.swift in Sources */,
 				3BA2DFDB29FAC2EF00E7B8A2 /* FaceItApp.swift in Sources */,
 				3B3C5B9629FB15FA009EA815 /* FaceIt.xcdatamodeld in Sources */,

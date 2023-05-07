@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ImageView: View {
-    var person: Person
+    @StateObject private var viewModel: ViewModel
     
-    @StateObject var viewModel = ViewModel()
+    init(person: Person) {
+        _viewModel = StateObject(wrappedValue: ViewModel(person: person))
+    }
     
     var body: some View {
-        // might need to change the image sizes
-        if !person.wrappedImageFile.isEmpty {
-            Image(uiImage: UIImage(data: viewModel.getImageData(person)) ?? UIImage())
+        if !viewModel.person.wrappedImageFile.isEmpty {
+            Image(uiImage: UIImage(data: viewModel.getImageData(viewModel.person)) ?? UIImage())
                 .resizable()
                 .scaledToFit()
         } else {

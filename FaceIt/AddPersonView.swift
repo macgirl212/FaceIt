@@ -11,7 +11,7 @@ struct AddPersonView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
-    @StateObject var viewModel = ViewModel()
+    @StateObject private var viewModel = ViewModel()
     
     var body: some View {
         NavigationStack {

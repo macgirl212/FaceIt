@@ -8,19 +8,21 @@
 import Foundation
 
 extension ImageView {
-    @MainActor class ViewModel: ObservableObject {
+    @MainActor final class ViewModel: ObservableObject {
+        @Published var person: Person
+        
+        init(person: Person) {
+            self.person = person
+        }
+        
         func getImageData(_ person: Person) -> Data {
-            let imageUrl = getDocumentsDirectory().appendingPathComponent(person.wrappedImageFile)
+            let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            
+            let imageUrl = path.appendingPathComponent(person.wrappedImageFile)
             
             let imageData = try? Data(contentsOf: imageUrl)
             
             return imageData ?? Data()
-        }
-        
-        func getDocumentsDirectory() -> URL {
-            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-            let documentsDirectory = paths[0]
-            return documentsDirectory
         }
     }
 }

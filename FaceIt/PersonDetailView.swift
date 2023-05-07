@@ -9,29 +9,23 @@ import MapKit
 import SwiftUI
 
 struct PersonDetailView: View {
-    var person: Person
-    @State private var region: MKCoordinateRegion
+    @StateObject private var viewModel: ViewModel
     
     init(person: Person) {
-        self.person = person
-        self.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: person.latitude, longitude: person.longitude), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
-    }
-    
-    var annotations: [Person] {
-        [person]
+        _viewModel = StateObject(wrappedValue: ViewModel(person: person))
     }
     
     var body: some View {
         VStack {
-            ImageView(person: person)
+            ImageView(person: viewModel.person)
             
-            Text(person.wrappedName)
+            Text(viewModel.person.wrappedName)
                 .font(.largeTitle)
                 .padding()
             
             Spacer()
             
-            Map(coordinateRegion: $region, annotationItems: annotations) {
+            Map(coordinateRegion: $viewModel.region, annotationItems: viewModel.annotations) {
                 MapMarker(coordinate: CLLocationCoordinate2D(latitude: $0.latitude, longitude: $0.longitude))
             }
             .padding()

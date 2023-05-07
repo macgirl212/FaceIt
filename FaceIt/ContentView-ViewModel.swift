@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension ContentView {
-    @MainActor class ViewModel: ObservableObject {
+    @MainActor final class ViewModel: ObservableObject {
         @Published var showingAddPersonView: Bool = false
         @Published var pickedImage: UIImage?
         
