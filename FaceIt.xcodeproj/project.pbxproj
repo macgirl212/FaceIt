@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B089FC129FEE9B0000CFBE8 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */; };
 		3B089FC329FEED6F000CFBE8 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */; };
+		3B1676C92A08378400A1502F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1676C72A08378400A1502F /* Person+CoreDataClass.swift */; };
+		3B1676CA2A08378400A1502F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1676C82A08378400A1502F /* Person+CoreDataProperties.swift */; };
 		3B3C5B9629FB15FA009EA815 /* FaceIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */; };
 		3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9729FB1653009EA815 /* DataController.swift */; };
 		3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */; };
@@ -23,14 +25,14 @@
 		3BA2DFE229FAC2EF00E7B8A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2DFE129FAC2EF00E7B8A2 /* Preview Assets.xcassets */; };
 		3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */; };
 		3BA7C09B2A03263A001B7662 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */; };
-		3BA7C0A02A032C47001B7662 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */; };
-		3BA7C0A12A032C47001B7662 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */; };
 		3BBFA4222A071D1F00A0623D /* PersonDetailView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
+		3B1676C72A08378400A1502F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3B1676C82A08378400A1502F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3B3C5B9529FB15FA009EA815 /* FaceIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceIt.xcdatamodel; sourceTree = "<group>"; };
 		3B3C5B9729FB1653009EA815 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
@@ -46,8 +48,6 @@
 		3BA2DFE129FAC2EF00E7B8A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
-		3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonDetailView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,8 +81,8 @@
 		3BA2DFD929FAC2EF00E7B8A2 /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
-				3BA7C09E2A032C47001B7662 /* Person+CoreDataClass.swift */,
-				3BA7C09F2A032C47001B7662 /* Person+CoreDataProperties.swift */,
+				3B1676C72A08378400A1502F /* Person+CoreDataClass.swift */,
+				3B1676C82A08378400A1502F /* Person+CoreDataProperties.swift */,
 				3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */,
 				3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */,
 				3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */,
@@ -182,12 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA7C0A02A032C47001B7662 /* Person+CoreDataClass.swift in Sources */,
+				3B1676C92A08378400A1502F /* Person+CoreDataClass.swift in Sources */,
 				3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */,
 				3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */,
 				3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */,
 				3B089FC329FEED6F000CFBE8 /* Color-Theme.swift in Sources */,
-				3BA7C0A12A032C47001B7662 /* Person+CoreDataProperties.swift in Sources */,
+				3B1676CA2A08378400A1502F /* Person+CoreDataProperties.swift in Sources */,
 				3B8B2FDF29FDB24B00489F2B /* PersonDetailView.swift in Sources */,
 				3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */,
 				3B8B2FE929FDC29700489F2B /* AddPersonView-ViewModel.swift in Sources */,

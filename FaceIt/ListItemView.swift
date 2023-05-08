@@ -26,9 +26,8 @@ struct ListItemView: View {
                 )
                 .frame(width: 100, height: 100)
                 
-            
-            Text(person.wrappedName)
-                .font(.title)
+            Text("\(person.wrappedFirstName) \(person.wrappedLastName)")
+                .font(.system(size: 24))
         }
     }
 }

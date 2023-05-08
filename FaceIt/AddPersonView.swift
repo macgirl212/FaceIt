@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddPersonView: View {
+    @Environment(\.colorScheme) var colorScheme
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
@@ -15,25 +16,51 @@ struct AddPersonView: View {
     
     var body: some View {
         NavigationStack {
-            Form {
-                Section {
-                    TextField("Add name", text: $viewModel.name)
+            VStack {
+                if viewModel.pickedImage != nil {
+                    Image(uiImage: viewModel.pickedImage!)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .padding()
+                } else {
+                    Image("Unknown")
+                        .resizable()
+                        .scaledToFit()
+                        .opacity(0.5)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .padding()
                 }
                 
-                Section {
-                    Button {
-                        viewModel.isShowingSourceMenu = true
-                    } label: {
-                        Text("Add image")
-                    }
-                    
-                    if viewModel.pickedImage != nil {
-                        Image(uiImage: viewModel.pickedImage!)
-                            .resizable()
-                            .scaledToFit()
-                    }
+                Button {
+                    viewModel.isShowingSourceMenu = true
+                } label: {
+                    Text("Add Image")
+                        .foregroundColor(CustomColor.lightListBackground)
                 }
+                
+                Spacer()
+                
+                TextField("First name", text: $viewModel.firstName)
+                    .padding([.leading, .trailing])
+                    .font(.title2)
+                    .background(.bar)
+                    .padding([.leading, .trailing])
+                
+                TextField("Last name", text: $viewModel.lastName)
+                    .padding([.leading, .trailing])
+                    .font(.title2)
+                    .background(.bar)
+                    .padding([.leading, .trailing])
+                
+                Spacer()
+                Spacer()
             }
+            .background(
+                colorScheme == .light
+                        ? CustomColor.darkListBackground
+                        : CustomColor.ultraDark
+            )
             .navigationTitle("Add new person")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -60,6 +87,7 @@ struct AddPersonView: View {
                 viewModel.locationFetcher.start()
             }
         }
+        .accentColor(CustomColor.lightListBackground)
         .sheet(isPresented: $viewModel.isShowingPicker) {
             ImagePicker(image: $viewModel.pickedImage)
         }

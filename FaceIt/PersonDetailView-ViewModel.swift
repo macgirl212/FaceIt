@@ -15,7 +15,7 @@ extension PersonDetailView {
         
         init(person: Person) {
             self.person = person
-            self.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: person.latitude, longitude: person.longitude), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+            self.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: person.latitude, longitude: person.longitude), span: MKCoordinateSpan(latitudeDelta: 0.0025, longitudeDelta: 0.0025))
         }
         
         var annotations: [Person] {

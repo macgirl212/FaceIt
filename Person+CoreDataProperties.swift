@@ -18,12 +18,17 @@ extension Person {
 
     @NSManaged public var id: UUID?
     @NSManaged public var imageFile: String?
-    @NSManaged public var name: String?
     @NSManaged public var latitude: Double
     @NSManaged public var longitude: Double
+    @NSManaged public var firstName: String?
+    @NSManaged public var lastName: String?
     
-    var wrappedName: String {
-        name ?? "Unknown"
+    var wrappedFirstName: String {
+        firstName ?? ""
+    }
+    
+    var wrappedLastName: String {
+        lastName ?? ""
     }
     
     var wrappedImageFile: String {

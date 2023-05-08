@@ -10,7 +10,8 @@ import UIKit
 
 extension AddPersonView {
     @MainActor final class ViewModel: ObservableObject {
-        @Published var name: String = ""
+        @Published var firstName: String = ""
+        @Published var lastName: String = ""
         @Published var isShowingPicker: Bool = false
         @Published var isShowingSourceMenu: Bool = false
         @Published var pickedImage: UIImage?
@@ -19,12 +20,13 @@ extension AddPersonView {
         
         var isValidEntry: Bool {
             // checks if name has any word characters and if an image exists
-            name.contains(/\w/) && pickedImage != nil
+            (firstName.contains(/\w/) || lastName.contains(/\w/)) && pickedImage != nil
         }
         
         func addPerson(_ person: Person) {
             person.id = UUID()
-            person.name = name
+            person.firstName = firstName
+            person.lastName = lastName
             
             if let location = self.locationFetcher.lastKnownLocation {
                 person.latitude = location.latitude
@@ -32,7 +34,6 @@ extension AddPersonView {
             } else {
                 print("Your location is unknown")
             }
-            
             
             let imageName = UUID().uuidString
             
