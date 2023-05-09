@@ -32,7 +32,7 @@ struct PersonDetailView: View {
                     Spacer()
                     
                     NavigationLink {
-                        Text("Full Screen Map")
+                        MapView(person: viewModel.person)
                     } label: {
                         Map(coordinateRegion: $viewModel.region, annotationItems: viewModel.annotations) {
                             MapMarker(coordinate: CLLocationCoordinate2D(latitude: $0.latitude, longitude: $0.longitude))
