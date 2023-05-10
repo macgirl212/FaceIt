@@ -1,18 +1,23 @@
 //
-//  AddPersonView.swift
+//  EditPersonView.swift
 //  FaceIt
 //
-//  Created by Melody Davis on 4/27/23.
+//  Created by Melody Davis on 5/10/23.
 //
 
 import SwiftUI
+import UIKit
 
-struct AddPersonView: View {
+struct EditPersonView: View {
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
-    @StateObject private var viewModel = ViewModel()
+    @StateObject private var viewModel: ViewModel
+    
+    init(firstName: String, lastName: String, pickedImage: UIImage?) {
+        _viewModel = StateObject(wrappedValue: ViewModel(firstName: firstName, lastName: lastName, pickedImage: pickedImage))
+    }
     
     var body: some View {
         NavigationStack {
@@ -31,7 +36,7 @@ struct AddPersonView: View {
                         ? CustomColor.darkListBackground
                         : CustomColor.ultraDark
             )
-            .navigationTitle("Add new person")
+            .navigationTitle("Edit person")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -41,11 +46,8 @@ struct AddPersonView: View {
                 }
                 
                 ToolbarItem(placement: .automatic) {
-                    Button("Save") {
-                        let newPerson = Person(context: moc)
-                        viewModel.addPerson(newPerson)
-                        
-                        try? moc.save()
+                    Button("Update") {
+                        // edit person function to come
                         
                         dismiss()
                     }
@@ -73,8 +75,8 @@ struct AddPersonView: View {
     }
 }
 
-struct AddPersonView_Previews: PreviewProvider {
+struct EditPersonView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPersonView()
+        EditPersonView(firstName: "", lastName: "", pickedImage: UIImage())
     }
 }

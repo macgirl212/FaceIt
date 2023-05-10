@@ -11,6 +11,7 @@
 		3B089FC329FEED6F000CFBE8 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */; };
 		3B1676C92A08378400A1502F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1676C72A08378400A1502F /* Person+CoreDataClass.swift */; };
 		3B1676CA2A08378400A1502F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1676C82A08378400A1502F /* Person+CoreDataProperties.swift */; };
+		3B1A17142A0AD94E00CD667E /* PersonSelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A17132A0AD94E00CD667E /* PersonSelectImageView.swift */; };
 		3B3C5B9629FB15FA009EA815 /* FaceIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */; };
 		3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9729FB1653009EA815 /* DataController.swift */; };
 		3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */; };
@@ -27,6 +28,9 @@
 		3BA2DFEB29FACAFE00E7B8A2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */; };
 		3BA7C09B2A03263A001B7662 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */; };
 		3BBFA4222A071D1F00A0623D /* PersonDetailView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */; };
+		3BC761A92A0AFC06001E0655 /* PersonTextfieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC761A82A0AFC06001E0655 /* PersonTextfieldsView.swift */; };
+		3BC761AB2A0AFD57001E0655 /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC761AA2A0AFD57001E0655 /* EditPersonView.swift */; };
+		3BC761AD2A0AFD7C001E0655 /* EditPersonView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC761AC2A0AFD7C001E0655 /* EditPersonView-ViewModel.swift */; };
 		3BC86F4B2A0957B8009AAE43 /* MapView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC86F4A2A0957B8009AAE43 /* MapView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,7 @@
 		3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		3B1676C72A08378400A1502F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		3B1676C82A08378400A1502F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3B1A17132A0AD94E00CD667E /* PersonSelectImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSelectImageView.swift; sourceTree = "<group>"; };
 		3B3C5B9529FB15FA009EA815 /* FaceIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceIt.xcdatamodel; sourceTree = "<group>"; };
 		3B3C5B9729FB1653009EA815 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,9 @@
 		3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonDetailView-ViewModel.swift"; sourceTree = "<group>"; };
+		3BC761A82A0AFC06001E0655 /* PersonTextfieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTextfieldsView.swift; sourceTree = "<group>"; };
+		3BC761AA2A0AFD57001E0655 /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
+		3BC761AC2A0AFD7C001E0655 /* EditPersonView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditPersonView-ViewModel.swift"; sourceTree = "<group>"; };
 		3BC86F4A2A0957B8009AAE43 /* MapView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,19 +97,23 @@
 				3B1676C82A08378400A1502F /* Person+CoreDataProperties.swift */,
 				3BA2DFDA29FAC2EF00E7B8A2 /* FaceItApp.swift */,
 				3B3C5B9D29FB1B0C009EA815 /* AddPersonView.swift */,
-				3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */,
+				3BC761AA2A0AFD57001E0655 /* EditPersonView.swift */,
+				3B1A17132A0AD94E00CD667E /* PersonSelectImageView.swift */,
+				3BC761A82A0AFC06001E0655 /* PersonTextfieldsView.swift */,
 				3BA2DFDC29FAC2EF00E7B8A2 /* ContentView.swift */,
-				3B69D03D2A0952F6004CD6F9 /* MapView.swift */,
-				3BC86F4A2A0957B8009AAE43 /* MapView-ViewModel.swift */,
-				3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */,
-				3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */,
 				3B8B2FE429FDC0A400489F2B /* ImageView.swift */,
+				3B089FC029FEE9B0000CFBE8 /* ListItemView.swift */,
+				3B69D03D2A0952F6004CD6F9 /* MapView.swift */,
 				3B8B2FDE29FDB24B00489F2B /* PersonDetailView.swift */,
-				3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */,
+				3B089FC229FEED6F000CFBE8 /* Color-Theme.swift */,
+				3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */,
+				3BA7C09A2A03263A001B7662 /* LocationFetcher.swift */,
 				3B8B2FE829FDC29700489F2B /* AddPersonView-ViewModel.swift */,
+				3BC761AC2A0AFD7C001E0655 /* EditPersonView-ViewModel.swift */,
 				3B8B2FE229FDBCB700489F2B /* ContentView-ViewModel.swift */,
 				3B8B2FE629FDC13D00489F2B /* ImageView-ViewModel.swift */,
-				3BA2DFEA29FACAFE00E7B8A2 /* ImagePicker.swift */,
+				3BC86F4A2A0957B8009AAE43 /* MapView-ViewModel.swift */,
+				3BBFA4212A071D1F00A0623D /* PersonDetailView-ViewModel.swift */,
 				3B3C5B9429FB15FA009EA815 /* FaceIt.xcdatamodeld */,
 				3B3C5B9729FB1653009EA815 /* DataController.swift */,
 				3BA2DFDE29FAC2EF00E7B8A2 /* Assets.xcassets */,
@@ -188,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC761A92A0AFC06001E0655 /* PersonTextfieldsView.swift in Sources */,
 				3B1676C92A08378400A1502F /* Person+CoreDataClass.swift in Sources */,
 				3B3C5B9829FB1653009EA815 /* DataController.swift in Sources */,
 				3B3C5B9E29FB1B0C009EA815 /* AddPersonView.swift in Sources */,
@@ -199,9 +212,12 @@
 				3BC86F4B2A0957B8009AAE43 /* MapView-ViewModel.swift in Sources */,
 				3BA2DFDD29FAC2EF00E7B8A2 /* ContentView.swift in Sources */,
 				3B8B2FE929FDC29700489F2B /* AddPersonView-ViewModel.swift in Sources */,
+				3B1A17142A0AD94E00CD667E /* PersonSelectImageView.swift in Sources */,
+				3BC761AB2A0AFD57001E0655 /* EditPersonView.swift in Sources */,
 				3B089FC129FEE9B0000CFBE8 /* ListItemView.swift in Sources */,
 				3BA7C09B2A03263A001B7662 /* LocationFetcher.swift in Sources */,
 				3B8B2FE329FDBCB700489F2B /* ContentView-ViewModel.swift in Sources */,
+				3BC761AD2A0AFD7C001E0655 /* EditPersonView-ViewModel.swift in Sources */,
 				3B8B2FE529FDC0A400489F2B /* ImageView.swift in Sources */,
 				3BBFA4222A071D1F00A0623D /* PersonDetailView-ViewModel.swift in Sources */,
 				3B8B2FE729FDC13D00489F2B /* ImageView-ViewModel.swift in Sources */,

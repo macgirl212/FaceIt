@@ -18,7 +18,6 @@ struct PersonDetailView: View {
     }
     
     var body: some View {
-        NavigationStack {
             VStack {
                 ImageView(person: viewModel.person)
                 
@@ -48,6 +47,16 @@ struct PersonDetailView: View {
                 .padding([.leading, .trailing])
             }
             .background(CustomColor.background)
+            .toolbar {
+                Button {
+                    viewModel.isShowingEditView = true
+                } label: {
+                    Image(systemName: "pencil")
+                }
+            }
+            .sheet(isPresented: $viewModel.isShowingEditView) {
+                EditPersonView(firstName: viewModel.person.wrappedFirstName, lastName: viewModel.person.wrappedLastName, pickedImage: viewModel.sendUIImage(viewModel.person.wrappedImageFile))
+            }
         }
-    }
+        
 }
