@@ -55,7 +55,7 @@ struct PersonDetailView: View {
                 }
             }
             .sheet(isPresented: $viewModel.isShowingEditView) {
-                EditPersonView(firstName: viewModel.person.wrappedFirstName, lastName: viewModel.person.wrappedLastName, pickedImage: viewModel.sendUIImage(viewModel.person.wrappedImageFile))
+                EditPersonView(person: viewModel.person, pickedImage: viewModel.sendUIImage(viewModel.person.wrappedImageFile))
             }
         }
         

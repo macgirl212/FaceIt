@@ -15,8 +15,8 @@ struct EditPersonView: View {
     
     @StateObject private var viewModel: ViewModel
     
-    init(firstName: String, lastName: String, pickedImage: UIImage?) {
-        _viewModel = StateObject(wrappedValue: ViewModel(firstName: firstName, lastName: lastName, pickedImage: pickedImage))
+    init(person: Person, pickedImage: UIImage?) {
+        _viewModel = StateObject(wrappedValue: ViewModel(person: person, pickedImage: pickedImage))
     }
     
     var body: some View {
@@ -26,7 +26,7 @@ struct EditPersonView: View {
                 
                 Spacer()
                 
-                PersonTextfieldsView(firstName: $viewModel.firstName, lastName: $viewModel.lastName)
+                PersonTextfieldsView(firstName: $viewModel.newFirstName, lastName: $viewModel.newLastName)
                 
                 Spacer()
                 Spacer()
@@ -47,7 +47,16 @@ struct EditPersonView: View {
                 
                 ToolbarItem(placement: .automatic) {
                     Button("Update") {
-                        // edit person function to come
+                        let updatedPerson = Person(context: moc)
+                        viewModel.updatePerson(updatedPerson)
+
+                        let updatedImage = viewModel.convertToUIImage(updatedPerson.wrappedImageFile)
+
+                        viewModel.pickedImage = updatedImage
+                        
+                        // need to fix image not refreshing...
+
+                        try? moc.save()
                         
                         dismiss()
                     }
@@ -77,6 +86,6 @@ struct EditPersonView: View {
 
 struct EditPersonView_Previews: PreviewProvider {
     static var previews: some View {
-        EditPersonView(firstName: "", lastName: "", pickedImage: UIImage())
+        EditPersonView(person: Person(), pickedImage: nil)
     }
 }
