@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var people: FetchedResults<Person>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.lastName)]) var people: FetchedResults<Person>
     
     @StateObject private var viewModel = ViewModel()
     

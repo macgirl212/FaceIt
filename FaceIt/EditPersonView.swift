@@ -5,6 +5,7 @@
 //  Created by Melody Davis on 5/10/23.
 //
 
+import CoreData
 import SwiftUI
 import UIKit
 
@@ -50,11 +51,9 @@ struct EditPersonView: View {
                         let updatedPerson = Person(context: moc)
                         viewModel.updatePerson(updatedPerson)
 
-                        let updatedImage = viewModel.convertToUIImage(updatedPerson.wrappedImageFile)
-
-                        viewModel.pickedImage = updatedImage
+                        viewModel.convertToUIImage(updatedPerson.wrappedImageFile)
                         
-                        // need to fix image not refreshing...
+                        // image not refreshing...
 
                         try? moc.save()
                         

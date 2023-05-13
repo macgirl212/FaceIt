@@ -80,14 +80,18 @@ extension EditPersonView {
             }
         }
         
-        func convertToUIImage(_ imageFile: String) -> UIImage? {
+        func convertToUIImage(_ imageFile: String) {
             let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             
             let imageUrl = path.appendingPathComponent(imageFile)
             
             let imageData = try? Data(contentsOf: imageUrl)
             
-            return UIImage(data: imageData ?? Data())
+            let newUIImage = UIImage(data: imageData ?? Data())
+            
+            DispatchQueue.main.async {
+                self.pickedImage = newUIImage
+            }
         }
     }
 }
